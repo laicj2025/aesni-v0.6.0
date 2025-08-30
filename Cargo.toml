@@ -10,13 +10,13 @@ keywords = ["crypto", "aes", "rijndael", "block-cipher"]
 categories = ["cryptography", "no-std"]
 
 [dependencies]
-block-cipher-trait = "0.6"
+block-cipher-trait = { git = "https://github.com/RustCrypto/traits.git", tag = "block-cipher-trait-v0.6.0" }
 opaque-debug = "0.2"
-stream-cipher = { version = "0.3", optional = true }
+stream-cipher = { git = "https://github.com/laicj2025/traits-stream-cipher-v0.3.0.git", branch = "master", optional = true }
 
 [dev-dependencies]
-block-cipher-trait = { version = "0.6", features = ["dev"] }
-stream-cipher = { version = "0.3", features = ["dev"] }
+block-cipher-trait = { git = "https://github.com/RustCrypto/traits.git", tag = "block-cipher-trait-v0.6.0" }
+stream-cipher = { git = "https://github.com/laicj2025/traits-stream-cipher-v0.3.0.git", branch = "master" }
 
 [features]
 default = ["ctr"]
